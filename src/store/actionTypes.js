@@ -1,0 +1,9 @@
+
+export const SAVEFORM = 'SAVEFORM';
+export const SAVEFORM_SUCCESS = 'SAVEFORM_SUCCESS';
+export const SAVEFORM_FAILED = 'SAVEFORM_FAILED';
+
+export const GETFORM = 'GETFORM';
+export const GETFORM_SUCCESS = 'GETFORM_SUCCESS';
+export const GETFORM_FAILED = 'GETFORM_FAILED';
+
