@@ -14,9 +14,9 @@ export const FormCheckbox = ({
 }) => {
     return (
         <Fragment>
-            {!isEdit ? <CheckboxContainer >
+            {!isEdit ? <CheckboxContainer key={id} >
                 <Label>
-                    <HiddenCheckbox checked={value} {...props} />
+                    <HiddenCheckbox checked={value} {...props} onChange={()=>{}} />
                     <StyledCheckbox checked={value} onClick={() => onChange(id, !value, type)} >
                         {value ? <Icon viewBox="0 0 24 24">
                             <polyline points="20 6 9 17 4 12" />

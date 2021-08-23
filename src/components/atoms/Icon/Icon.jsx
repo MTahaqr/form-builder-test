@@ -7,7 +7,7 @@ export const Icon = ({
 }) => {
     const Icon = type;
     return (
-        <IconContainer onClick={onClick}>
+        <IconContainer key={type} onClick={onClick}>
             {type ? <Icon /> : ""}
         </IconContainer>
 

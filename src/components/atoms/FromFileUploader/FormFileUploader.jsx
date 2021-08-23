@@ -9,7 +9,7 @@ export const FormFileUploader = ({
     id
  }) => {
     return (
-        <FormFileContainer >
+        <FormFileContainer key={id}>
             <Button >Choose file</Button>
             <Input type="file" name="myfile" />
         </FormFileContainer>

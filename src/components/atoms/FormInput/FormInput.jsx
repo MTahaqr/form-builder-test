@@ -13,6 +13,7 @@ export const FormInput = ({
             type="text"
             placeholder="Placeholder ...."
             value={value}
+            key={id}
             onChange={e => onChange(id, e.target.value, type)} />
     );
 }

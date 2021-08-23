@@ -9,12 +9,14 @@ export const FormButton = ({
     onClick = () => { },
     isDisabled = false,
     props,
+    id
 }) => {
     const Icons = icon;
     return (
         <Button
             isDisabled={isDisabled}
             onClick={onClick}
+            key={id}
         >
             {icon ? <Icons /> : ""}
             {value}

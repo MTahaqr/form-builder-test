@@ -6,7 +6,7 @@ export const FormDivider = ({
     id
 }) => {
     return (
-        <DividerContainer>
+        <DividerContainer key={id}>
             <Hr />
         </DividerContainer>
     );

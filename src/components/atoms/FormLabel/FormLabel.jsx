@@ -13,7 +13,7 @@ export const FormLabel = ({
 }) => {
     return (
         <Fragment>
-            {!isEdit ? <LabelContainer>
+            {!isEdit ? <LabelContainer key={id}>
                 <P>{label}</P>
             </LabelContainer> :
                 <FormInput
@@ -21,6 +21,7 @@ export const FormLabel = ({
                     onChange={onLabelChange}
                     value={label}
                     id={id}
+                    key={id}
                 />
             }
         </Fragment>

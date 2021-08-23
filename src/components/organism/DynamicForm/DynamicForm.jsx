@@ -21,10 +21,12 @@ export const DynamicForm = ({
                 <H3>{heading}</H3>
                 {formControls.map(({ type, id, isEditable, isEdit, label }) => {
                     return (
-                        <FormControlContainer>
+                        <FormControlContainer
+                            key={id}>
                             <FormControls
                                 type={type}
                                 id={id}
+                                key={id}
                                 onLabelChange={onLabelChange}
                                 isEdit={isEdit}
                                 label={label}
